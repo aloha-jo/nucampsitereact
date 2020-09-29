@@ -156,7 +156,7 @@ function RenderComments({comments, addComment, campsiteId}) {
                 );
             }
             if (props.campsite) {
-        if (props.campsite) {
+        
             return (
                 <div className="container">
                     <div className="row">
