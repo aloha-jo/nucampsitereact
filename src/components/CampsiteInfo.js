@@ -134,7 +134,7 @@ function RenderComments({comments, addComment, campsiteId}) {
 
 
     function CampsiteInfo(props) {
-        function CampsiteInfo(props) {
+
             if (props.isLoading) {
                 return (
                     <div className="container">
