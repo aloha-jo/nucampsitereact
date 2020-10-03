@@ -13,6 +13,7 @@ class CommentForm extends Component {
         super(props);
 
         this.state = {
+            author: '',
 
             isModalOpen: false
         };
@@ -29,10 +30,9 @@ class CommentForm extends Component {
     }
     
     handleSubmit(values) {
-        console.log('Current state is: ' + JSON.stringify(values));
-        alert('Current state is: ' + JSON.stringify(values));
+        this.toggleModal();
+        this.props.addComment(this.props.campsiteId, values.rating, values.author, values.text);
     }
-
 
     render() {
         return (
@@ -58,6 +58,7 @@ class CommentForm extends Component {
                                         <Control.textarea model=".author" id="author" name="author" rows="1"
                                                 className="form-control" 
                                                 validators={{
+                                                    required, 
                                                     minLength: minLength(2),
                                                     maxLength: maxLength(15)
                                                 }}
@@ -68,6 +69,7 @@ class CommentForm extends Component {
                                                 show="touched"
                                                 component="div"
                                                 messages={{
+                                                    required: 'Required',
                                                     minLength: 'Must be at least 2 characters',
                                                     maxLength: 'Must be 15 characters or less'
                                                 }}

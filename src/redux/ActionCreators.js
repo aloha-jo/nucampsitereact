@@ -14,7 +14,7 @@ export const addComment = (campsiteId, rating, author, text) => ({
 
 export const fetchCampsites = () => dispatch => {
     dispatch(campsitesLoading());
-
+    console.log("hello")
     return fetch(baseUrl + 'campsites')
         .then(response => response.json())
         .then(campsites => dispatch(addCampsites(campsites)));
