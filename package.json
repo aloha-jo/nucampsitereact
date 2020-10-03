@@ -40,5 +40,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This is a faux website for learning purposes",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aloha-jo/nucampsitereact.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aloha-jo/nucampsitereact/issues"
+  },
+  "homepage": "https://github.com/aloha-jo/nucampsitereact#readme"
 }

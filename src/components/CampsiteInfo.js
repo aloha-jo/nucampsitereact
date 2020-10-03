@@ -94,8 +94,6 @@ class CommentForm extends Component {
 }
 
 
-
-
 function RenderCampsite({campsite}) {
     return (
         <div className="col-md-5 m-1">
